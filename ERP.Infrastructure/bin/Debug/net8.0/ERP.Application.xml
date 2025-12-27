@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ERP.Application</name>
+    </assembly>
+    <members>
+        <member name="T:ERP.Application.Interfaces.Repositories.IBranchesRepository">
+            <summary>Repository abstraction for Branch persistence.</summary>
+        </member>
+        <member name="T:ERP.Application.Interfaces.Repositories.IInventoryLocationsRepository">
+            <summary>Repository abstraction for InventoryLocation persistence.</summary>
+        </member>
+        <member name="T:ERP.Application.Interfaces.Repositories.IPartsRepository">
+            <summary>Repository abstraction for Part persistence.</summary>
+        </member>
+        <member name="T:ERP.Application.Interfaces.Repositories.IPurchaseOrdersRepository">
+            <summary>Repository abstraction for Purchase Orders (header + lines).</summary>
+        </member>
+        <member name="T:ERP.Application.Interfaces.Repositories.IShipmentsRepository">
+            <summary>Repository abstraction for Shipments (SINVHDR).</summary>
+        </member>
+        <member name="T:ERP.Application.Interfaces.Repositories.ISuppliersRepository">
+            <summary>Repository abstraction for Supplier persistence.</summary>
+        </member>
+        <member name="T:ERP.Application.Interfaces.Services.IInventoryLocationsService">
+            <summary>Service abstraction for Inventory Location operations.</summary>
+        </member>
+        <member name="T:ERP.Application.Interfaces.Services.IPartsService">
+            <summary>Service abstraction for Part operations.</summary>
+        </member>
+        <member name="T:ERP.Application.Interfaces.Services.IPurchaseOrdersService">
+            <summary>Service abstraction for Purchase Order operations.</summary>
+        </member>
+        <member name="T:ERP.Application.Interfaces.Services.IShipmentsService">
+            <summary>Service abstraction for Shipment operations.</summary>
+        </member>
+        <member name="T:ERP.Application.Interfaces.Services.ISuppliersService">
+            <summary>Service abstraction for Supplier operations.</summary>
+        </member>
+        <member name="T:ERP.Application.Services.InventoryLocationsService">
+            <summary>Application service for Inventory Location operations.</summary>
+        </member>
+        <member name="T:ERP.Application.Services.PartsService">
+            <summary>Application service for Part operations.</summary>
+        </member>
+        <member name="M:ERP.Application.Services.PartsService.GetByCodeAsync(System.String,System.Threading.CancellationToken)">
+            <summary>Get a single part by code.</summary>
+        </member>
+        <member name="M:ERP.Application.Services.PartsService.GetAllAsync(System.Threading.CancellationToken)">
+            <summary>List all parts.</summary>
+        </member>
+        <member name="T:ERP.Application.Services.PurchaseOrdersService">
+            <summary>Application service for Purchase Orders.</summary>
+        </member>
+        <member name="T:ERP.Application.Services.ShipmentsService">
+            <summary>Application service for Shipments.</summary>
+        </member>
+        <member name="T:ERP.Application.Services.SuppliersService">
+            <summary>Application service for Supplier operations.</summary>
+        </member>
+    </members>
+</doc>

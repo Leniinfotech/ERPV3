@@ -1,0 +1,73 @@
+/* Center wrapper + increase width */
+.payment-wrapper {
+  max-width: 780px;
+  margin: 10px auto;
+  padding-bottom: 0px;
+}
+
+/* Card */
+.card {
+  border-radius: 10px;
+}
+
+/* Header */
+.card-header {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #42a5f5 !important;
+}
+
+/* Labels left aligned */
+.form-label {
+  font-weight: 600;
+  text-align: left !important;
+  display: block;
+  margin-bottom: 3px;
+}
+
+/* Uniform input width */
+.reduced-input,
+.form-control {
+  width: 100% !important;
+}
+
+/* Compact inputs */
+.form-control {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.88rem;
+}
+
+  .form-control:focus {
+    border-color: #42a5f5 !important;
+    box-shadow: 0 0 4px rgba(66,165,245,0.4);
+  }
+
+/* Buttons */
+.btn-primary {
+  background-color: #42a5f5 !important;
+  border: none !important;
+  padding: 8px 18px;
+  border-radius: 6px;
+}
+
+  .btn-primary:hover {
+    background-color: #1e88e5 !important;
+  }
+
+/* FIX: remove extra bottom space */
+.card-body {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  min-height: auto !important; /* ← FIXED */
+}
+
+/* Print */
+@media print {
+  button {
+    display: none !important;
+  }
+
+  select, input, textarea {
+    border: none !important;
+  }
+}

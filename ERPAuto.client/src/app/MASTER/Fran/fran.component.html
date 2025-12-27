@@ -1,0 +1,76 @@
+<div class="container mt-4 p-4 shadow rounded bg-light">
+  <h2 class="text-center mb-4 text-primary fw-bold">FRAN Master</h2>
+
+  <!-- ✅ Form Section -->
+  <form (ngSubmit)="onSubmit()" class="row g-3">
+    <div class="col-md-4">
+      <label class="form-label fw-semibold">FRAN</label>
+      <input type="text"
+             class="form-control"
+             placeholder="Enter FRAN "
+             [(ngModel)]="franObj.franCode"
+             name="franCode"
+             [readonly]="isEditMode"
+             required />
+    </div>
+
+    <div class="col-md-4">
+      <label class="form-label fw-semibold">Name</label>
+      <input type="text"
+             class="form-control"
+             placeholder="Enter Name"
+             [(ngModel)]="franObj.name"
+             name="name"
+             required />
+    </div>
+
+    <div class="col-md-4">
+      <label class="form-label fw-semibold">NameAr</label>
+      <input type="text"
+             class="form-control"
+             placeholder="Enter NameAr"
+             [(ngModel)]="franObj.nameAr"
+             name="nameAr"
+             required />
+    </div>
+
+    <div class="col-12 text-center mt-3">
+      <button type="submit" class="btn btn-edit">
+        {{ isEditMode ? 'Update' : 'Save' }}
+      </button>&nbsp;
+      <button type="button" class="btn btn-delete" (click)="resetForm()">Clear</button>
+    </div>
+  </form>
+
+  <!-- ✅ Table Section -->
+  <div class="table-responsive mt-5">
+    <table class="table table-bordered table-striped align-middle text-center">
+      <thead class="table-primary">
+        <tr>
+          <th>ID</th>
+          <th>FRAN</th>
+          <th>Name</th>
+          <th>NameAr</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let f of franList; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ f.franCode }}</td>
+          <td>{{ f.name }}</td>
+          <td>{{ f.nameAr }}</td>
+          <td>
+            <button class="btn btn-edit" (click)="editFran(f)">Edit</button>&nbsp;
+            <button class="btn btn-delete" (click)="deleteFran(f.franCode)">Delete</button>
+          </td>
+        </tr>
+        <tr *ngIf="franList.length === 0">
+          <td colspan="5" class="text-muted text-center py-3">
+            No FRAN records found
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

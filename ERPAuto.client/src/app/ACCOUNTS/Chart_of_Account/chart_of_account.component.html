@@ -1,0 +1,35 @@
+  <!-- Main Card -->
+  <div class="main-card">
+    <div class="header-bar">Expense Entry</div>
+
+    <div class="form-section">
+      <form #expenseEntryForm="ngForm" class="row g-3">
+
+        <div class="col-md-2">
+          <label class="form-label">Account type</label>
+          <select class="form-select">
+            <option value="">All</option>
+            <option value="Paid">Paid</option>
+            <option value="Pending">Pending</option>
+            <option value="Partially Paid">Partially Paid</option>
+          </select>
+        </div>
+
+        <div class="col-md-2">
+          <label class="form-label">Account Code</label>
+          <input type="text" class="form-control" placeholder="Invoice Number">
+        </div>
+
+        <div class="col-md-2">
+          <label class="form-label">Account Name</label>
+          <input type="text" class="form-control">
+        </div>
+
+        <div class="col-md-2">
+          <label class="form-label">Account Balance</label>
+          <input type="text" class="form-control">
+        </div>
+
+      </form>
+    </div>
+  </div>

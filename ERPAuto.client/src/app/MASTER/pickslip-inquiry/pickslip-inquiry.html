@@ -1,0 +1,191 @@
+<div class="card-container">
+
+  <!-- PAGE HEADER -->
+  <div class="card-header">
+    <h2>PickSlip Inquiry</h2>
+  </div>
+
+  <div class="card-body">
+
+    <!-- FILTER SECTION TITLE -->
+    <div class="section-title">Filter</div>
+    <!-- TOP SEARCH BAR + MAIN SEARCH BUTTON -->
+    <div class="top-search-container" [formGroup]="filterForm">
+
+      <div class="search-box">
+        <i class="bi bi-search"></i>
+        <input type="text" formControlName="search" placeholder="Search..." />
+      </div>
+
+      <button class="search-btn" (click)="onSearch()">Search</button>
+      <button class="search-btn" (click)="goToEntry()">
+        Add 
+      </button>
+    </div>
+    <div class="filter-box" [formGroup]="filterForm">
+      <div class="form-row">
+
+        <div class="form-group">
+
+          <label>PickSlip Type</label>
+          <select formControlName="type">
+            <option value="">Select Type</option>
+            <option>POS</option>
+            <option>WORKSHOP</option>
+            <option>SALES</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>PickSlip Number</label>
+          <input type="text" formControlName="number" placeholder="Enter Slip No" />
+        </div>
+
+        <div class="form-group">
+          <label>PickSlip Date</label>
+          <input type="date" formControlName="date" />
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- DETAILS TITLE -->
+    <div class="section-title">Details</div>
+
+    <!-- TABLE -->
+    <div class="table-container">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>PickSlip No</th>
+            <th>PickSlip Type</th>
+            <th>PickSlip Date</th>
+            <th>Store</th>
+            <th>Part</th>
+            <th>Make</th>
+            <th>Qty</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr *ngIf="loading">
+            <td colspan="8" style="text-align:center;">Loading...</td>
+          </tr>
+
+          <tr *ngIf="!loading && items.length === 0">
+            <td colspan="8" style="text-align:center;">No records found</td>
+          </tr>
+
+          <tr *ngFor="let item of items">
+            <td>{{ item.pickslipno }}</td>
+            <td>{{ item.picksliptype }}</td>
+            <td>{{ item.pickslipdate | date:'yyyy-MM-dd' }}</td>
+            <td>{{ item.store }}</td>
+            <td>{{ item.part }}</td>
+            <td>{{ item.make }}</td>
+            <td>{{ item.qty }}</td>
+
+            <td class="action-buttons">
+              <button class="btn-view" (click)="onView(item)">View</button>
+              <button class="btn-edit" (click)="onEdit(item)">Edit</button>
+              <!--<button class="btn-delete" (click)="onDelete(item)">Delete</button>-->
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ====================== VIEW MODAL ====================== -->
+<div class="modal-overlay" [class.show]="showViewModal">
+  <div class="modal-box">
+
+    <div class="modal-header">
+      <h3>PickSlip Details</h3>
+    </div>
+
+    <div class="modal-content">
+      <div class="modal-row"><strong>PickSlip No:</strong> {{ selectedItem?.pickslipno }}</div>
+      <div class="modal-row"><strong>PickSlip Type:</strong> {{ selectedItem?.picksliptype }}</div>
+      <div class="modal-row"><strong>Date:</strong> {{ selectedItem?.pickslipdate | date:'dd-MM-yyyy' }}</div>
+      <div class="modal-row"><strong>Store:</strong> {{ selectedItem?.store }}</div>
+      <div class="modal-row"><strong>Part:</strong> {{ selectedItem?.part }}</div>
+      <div class="modal-row"><strong>Make:</strong> {{ selectedItem?.make }}</div>
+      <div class="modal-row"><strong>Quantity:</strong> {{ selectedItem?.qty }}</div>
+    </div>
+
+    <div class="modal-actions">
+      <button class="close-btn" (click)="closeModal()">Close</button>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- ====================== EDIT MODAL ====================== -->
+<div class="modal-overlay" [class.show]="showEditModal">
+  <div class="modal-box">
+
+    <div class="modal-header">
+      <h3>Edit PickSlip</h3>
+    </div>
+
+    <div class="modal-content">
+
+      <div class="modal-row">
+        <strong>PickSlip No:</strong>
+        <input type="text" [(ngModel)]="editItem.pickslipno" class="edit-input" />
+      </div>
+
+      <div class="modal-row">
+        <strong>PickSlip Type:</strong>
+        <select [(ngModel)]="editItem.picksliptype" class="edit-input">
+          <option>POS</option>
+          <option>Sales</option>
+          <option>Transfer</option>
+        </select>
+      </div>
+
+      <div class="modal-row">
+        <strong>Date:</strong>
+        <input type="date" [(ngModel)]="editItem.pickslipdate" class="edit-input" />
+      </div>
+
+      <div class="modal-row">
+        <strong>Store:</strong>
+        <input type="text" [(ngModel)]="editItem.store" class="edit-input" />
+      </div>
+
+      <div class="modal-row">
+        <strong>Part:</strong>
+        <input type="text" [(ngModel)]="editItem.part" class="edit-input" />
+      </div>
+
+      <div class="modal-row">
+        <strong>Make:</strong>
+        <input type="text" [(ngModel)]="editItem.make" class="edit-input" />
+      </div>
+
+      <div class="modal-row">
+        <strong>Quantity:</strong>
+        <input type="number" [(ngModel)]="editItem.qty" class="edit-input" />
+      </div>
+
+    </div>
+
+    <div class="modal-actions">
+      <button class="close-btn" (click)="closeEditModal()">Cancel</button>
+      <button class="save-btn" (click)="saveEdit()">Save</button>
+    </div>
+
+  </div>
+</div>

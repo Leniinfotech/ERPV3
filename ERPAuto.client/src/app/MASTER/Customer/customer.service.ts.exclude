@@ -1,0 +1,169 @@
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Observable, throwError } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
+
+// API Base URL - Update this to match your backend URL
+const API_BASE_URL = 'http://localhost:5220/api/v1/master/customers'; // Backend API URL
+
+export interface Customer {
+  customerCode: string;
+  id?: number;
+  name: string;
+  nameAr: string;
+  phone: string;
+  email: string;
+  address: string;
+  vatNo: string;
+  createdDate?: string;
+  updateDate?: string;
+  updateDt?: string;
+  updateBy?: string;
+  updateRemarks?: string;
+}
+
+@Injectable({
+  providedIn: 'root'
+})
+export class CustomerService {
+  constructor(private http: HttpClient) { }
+
+  // Get all customers
+  getAll(): Observable<Customer[]> {
+    return this.http.get<Customer[]>(API_BASE_URL).pipe(
+      map((response: any) => {
+        // Handle different response formats
+        if (Array.isArray(response)) {
+          return response;
+        } else if (response && Array.isArray(response.data)) {
+          return response.data;
+        } else {
+          return [];
+        }
+      }),
+      catchError(this.handleError)
+    );
+  }
+
+  // Get customer by code
+  getByCode(customerCode: string): Observable<Customer> {
+    return this.http.get<Customer>(`${API_BASE_URL}/${customerCode}`).pipe(
+      catchError(this.handleError)
+    );
+  }
+
+  // Create new customer
+  create(customer: Customer): Observable<any> {
+    // Note: createdDate, updateDate, updateDt are set by the API
+    return this.http.post<any>(API_BASE_URL, customer).pipe(
+      catchError(this.handleError)
+    );
+  }
+
+  // Update customer
+  update(customerCode: string, customer: Customer): Observable<any> {
+    // Set default values if not provided
+    if (!customer.updateBy) {
+      customer.updateBy = 'api';
+    }
+    if (!customer.updateRemarks) {
+      customer.updateRemarks = '';
+    }
+
+    return this.http.put<any>(`${API_BASE_URL}/${customerCode}`, customer, { observe: 'response' }).pipe(
+      map(response => {
+        // Handle 204 No Content response
+        if (response.status === 204 || response.status === 200) {
+          return {
+            success: true,
+            message: 'Customer updated successfully',
+            status: response.status
+          };
+        }
+        return response.body || { success: true, message: 'Customer updated successfully' };
+      }),
+      catchError(this.handleError)
+    );
+  }
+
+  // Delete customer
+  delete(customerCode: string): Observable<any> {
+    return this.http.delete<any>(`${API_BASE_URL}/${customerCode}`, { observe: 'response' }).pipe(
+      map(response => {
+        // Handle 204 No Content response
+        if (response.status === 204 || response.status === 200) {
+          return {
+            success: true,
+            message: 'Customer deleted successfully',
+            status: response.status
+          };
+        }
+        return response.body || { success: true, message: 'Customer deleted successfully' };
+      }),
+      catchError(this.handleError)
+    );
+  }
+
+  // Search customers (client-side filtering)
+  search(term: string, customers: Customer[]): Customer[] {
+    if (!term.trim()) {
+      return customers;
+    }
+    const searchTerm = term.toLowerCase();
+    return customers.filter(c =>
+      c.name?.toLowerCase().includes(searchTerm) ||
+      c.nameAr?.toLowerCase().includes(searchTerm) ||
+      c.email?.toLowerCase().includes(searchTerm) ||
+      c.phone?.includes(term) ||
+      c.address?.toLowerCase().includes(searchTerm) ||
+      c.vatNo?.toLowerCase().includes(searchTerm) ||
+      c.customerCode?.toLowerCase().includes(searchTerm)
+    );
+  }
+
+  // Error handler
+  private handleError(error: HttpErrorResponse): Observable<never> {
+    let errorMessage = 'An unknown error occurred';
+
+    if (error.error instanceof ErrorEvent) {
+      // Client-side error (network error, CORS, etc.)
+      errorMessage = `Network Error: ${error.error.message}`;
+      console.error('Client-side error:', error.error);
+    } else {
+      // Server-side error
+      console.error('Server error:', {
+        status: error.status,
+        statusText: error.statusText,
+        error: error.error,
+        url: error.url
+      });
+
+      if (error.status === 0) {
+        errorMessage = 'Cannot connect to server. Please ensure the backend API is running.';
+      } else if (error.status === 404) {
+        errorMessage = 'API endpoint not found. Please check the backend URL.';
+      } else if (error.status === 500) {
+        errorMessage = error.error?.message || error.error?.details || 'Server error occurred.';
+      } else if (error.error?.message) {
+        errorMessage = error.error.message;
+      } else if (error.error?.details) {
+        errorMessage = error.error.details;
+      } else {
+        errorMessage = `Error ${error.status}: ${error.statusText || error.message}`;
+      }
+    }
+
+    console.error('API Error Details:', {
+      message: errorMessage,
+      status: error.status,
+      url: error.url,
+      error: error.error
+    });
+
+    return throwError(() => ({
+      message: errorMessage,
+      status: error.status,
+      error: error.error
+    }));
+  }
+}

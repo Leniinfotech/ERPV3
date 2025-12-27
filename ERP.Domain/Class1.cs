@@ -1,0 +1,2 @@
+﻿namespace ERP.Domain;
+// deleted

@@ -1,0 +1,160 @@
+<div class="card-container">
+  <div class="card-header">
+    <h2>PickSlip Entry</h2>
+  </div>
+
+  <div class="card-body">
+    <form (ngSubmit)="onSubmit()" #pickForm="ngForm">
+
+      <!-- ===== HEADER SECTION ===== -->
+      <div class="section-title">Header</div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>PickSlip Type</label>
+          <select [(ngModel)]="newPickSlip.picksliptype"
+                  name="picksliptype"
+                  required>
+            <option value="Pos">Pos</option>
+            <option value="WorkShop">WorkShop</option>
+            <option value="WareHouse">WareHouse</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Pick Slip No</label>
+          <input type="number"
+                 [(ngModel)]="newPickSlip.pickslipno"
+                 name="pickslipno"
+                 placeholder="Enter Slip No"
+                 required />
+        </div>
+
+        <div class="form-group">
+          <label>Pick Slip Date</label>
+          <input type="date"
+                 [(ngModel)]="newPickSlip.pickslipdate"
+                 name="pickslipdate"
+                 required />
+        </div>
+      </div>
+
+      <!-- ===== DETAILS SECTION ===== -->
+      <div class="section-title">Details</div>
+
+      <div class="form-row">
+
+        <!-- 🔥 FINAL MERGED — Ref Srl Field -->
+        <div class="form-group">
+          <label>Ref Srl</label>
+          <input type="text"
+                 [(ngModel)]="newPickSlip.refsrl"
+                 name="refsrl"
+                 class="form-control"
+                 disabled />
+        </div>
+
+        <div class="form-group">
+          <label>Part</label>
+          <input type="number"
+                 [(ngModel)]="newPickSlip.part"
+                 name="part"
+                 placeholder="Enter Part"
+                 required />
+        </div>
+
+        <div class="form-group">
+          <label>Make</label>
+          <select [(ngModel)]="newPickSlip.make" name="make" required>
+            <option value="Toyota">Toyota</option>
+            <option value="Ford">Ford</option>
+            <option value="Tata">Tata</option>
+            <option value="Mahindra">Mahindra</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Store</label>
+          <select [(ngModel)]="newPickSlip.store" name="store" required>
+            <option value="Branch A">Branch A</option>
+            <option value="Branch B">Branch B</option>
+            <option value="Branch C">Branch C</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Qty</label>
+          <input type="number"
+                 [(ngModel)]="newPickSlip.qty"
+                 name="qty"
+                 placeholder="Enter Quantity"
+                 required />
+        </div>
+
+        <div class="form-group">
+          <label>Ref No</label>
+          <input type="text"
+                 [(ngModel)]="newPickSlip.refno"
+                 name="refno"
+                 placeholder="Enter Ref No" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Ref Type</label>
+          <input type="text"
+                 [(ngModel)]="newPickSlip.reftype"
+                 name="reftype"
+                 placeholder="Enter Ref Type" />
+        </div>
+
+        <div class="form-group">
+          <label>Remarks</label>
+          <textarea rows="1"
+                    [(ngModel)]="newPickSlip.remarks"
+                    name="remarks"
+                    placeholder="Enter Remarks"></textarea>
+        </div>
+      </div>
+
+      <div class="btn-center">
+        <button type="submit" class="btn-submit">Submit</button>
+      </div>
+    </form>
+
+    <!-- ===== GRID SECTION ===== -->
+    <div class="table-container">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>PickSlip No</th>
+            <th>Part</th>
+            <th>Make</th>
+            <th>Store</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let p of pickSlips">
+            <td>{{ p.pickslipno }}</td>
+            <td>{{ p.part }}</td>
+            <td>{{ p.make }}</td>
+            <td>{{ p.store }}</td>
+            <td>{{ p.qty }}</td>
+          </tr>
+
+          <tr *ngIf="pickSlips.length === 0">
+            <td colspan="5" class="no-records">
+              No PickSlip records found
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

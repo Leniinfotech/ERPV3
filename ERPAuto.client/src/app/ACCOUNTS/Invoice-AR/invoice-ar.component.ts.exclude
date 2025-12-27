@@ -1,0 +1,124 @@
+import {
+  Component,
+  OnInit,
+  AfterViewInit,
+  ViewChild,
+  ElementRef
+} from '@angular/core';
+import { CommonModule, DecimalPipe } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { Chart, registerables } from 'chart.js';
+
+Chart.register(...registerables);
+
+interface CustomerSummary {
+  customer: string;
+  invoices: number;
+  receipts: number;
+  balance: number;
+  status?: string;
+}
+
+@Component({
+  selector: 'app-accountreceivable',
+  standalone: true,
+  imports: [CommonModule, FormsModule, DecimalPipe],
+  templateUrl: './invoice-ar.component.html',
+  styleUrls: ['./invoice-ar.component.css']
+})
+export class InvoiceAR implements OnInit, AfterViewInit {
+  @ViewChild('arChart') chartRef!: ElementRef<HTMLCanvasElement>;
+  chartInstance: Chart | null = null;
+
+  customerSummary: CustomerSummary[] = []; // Backend data placeholder
+  paginatedCustomers: CustomerSummary[] = [];
+
+  // Search Filters
+  customerName = '';
+  invoiceNumber = '';
+  selectedStatus = '';
+
+  // Pagination
+  currentPage = 1;
+  itemsPerPage = 5;
+  totalPages: number[] = [];
+
+  ngOnInit(): void {
+    this.fetchCustomerData();
+  }
+
+  ngAfterViewInit(): void {
+    this.renderChart();
+  }
+
+  fetchCustomerData(): void {
+    // Simulate backend fetch delay
+    setTimeout(() => {
+      this.customerSummary = []; // Replace with API data
+      this.updatePagination();
+    }, 1000);
+  }
+
+  onSearch(): void {
+    console.log('Search:', this.customerName, this.invoiceNumber, this.selectedStatus);
+    // Apply filters when backend is connected
+  }
+
+  updatePagination(): void {
+    const total = this.customerSummary.length;
+    const totalPages = Math.ceil(total / this.itemsPerPage) || 1;
+    this.totalPages = Array.from({ length: totalPages }, (_, i) => i + 1);
+
+    const start = (this.currentPage - 1) * this.itemsPerPage;
+    const end = start + this.itemsPerPage;
+    this.paginatedCustomers = this.customerSummary.slice(start, end);
+  }
+
+  changePage(page: number): void {
+    if (page < 1 || page > this.totalPages.length) return;
+    this.currentPage = page;
+    this.updatePagination();
+  }
+
+  renderChart(): void {
+    if (this.chartInstance) {
+      this.chartInstance.destroy();
+    }
+
+    const ctx = this.chartRef.nativeElement.getContext('2d');
+    if (!ctx) return;
+
+    this.chartInstance = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+        datasets: [
+          {
+            label: 'Receipts',
+            data: [15000, 23000, 21000, 25000, 27000, 31000],
+            backgroundColor: '#42a5f5'
+          },
+          {
+            label: 'Outstanding',
+            data: [8000, 12000, 10000, 14000, 16000, 20000],
+            backgroundColor: '#9e9e9e'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'top' }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              callback: value => `₹${value}`
+            }
+          }
+        }
+      }
+    });
+  }
+}

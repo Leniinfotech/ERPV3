@@ -1,0 +1,65 @@
+  <!-- Main Card -->
+<div class="main-card">
+  <div class="header-bar">Part Entry</div>
+
+  <div class="form-section">
+    <form id="partEntryForm" (ngSubmit)="onSubmit()" class="row g-3">
+
+      <div class="col-md-3">
+        <label for="make" class="form-label">Make</label>
+        <select id="make" class="form-select" [(ngModel)]="partData.make" name="make" required>
+          <option value="">Select Make</option>
+          <option *ngIf="makeList.length === 0" disabled>Loading...</option>
+          <option *ngFor="let make of makeList" [value]="make.name">{{ make.makeCode }}</option>
+        </select>
+      </div>
+
+      <div class="col-md-3">
+        <label for="partno" class="form-label">Part No</label>
+        <input type="text" id="partno" class="form-control" [(ngModel)]="partData.partCode" name="partCode" placeholder="Enter Part Number" required />
+      </div>
+
+      <div class="col-md-3">
+        <label for="invclass" class="form-label">INVCLASS</label>
+        <select id="invclass" class="form-select" [(ngModel)]="partData.invClass" name="invClass" required>
+          <option value="">Select INVCLASS</option>
+          <option *ngFor="let inv of invClassList" [value]="inv.paramValue">{{ inv.paramDesc }}</option>
+        </select>
+      </div>
+
+      <div class="col-md-3">
+        <label for="category" class="form-label">Category</label>
+        <select id="category" class="form-select" [(ngModel)]="partData.category" name="category" required>
+          <option value="">Select Category</option>
+          <option *ngFor="let cat of categoryList" [value]="cat.paramValue">{{ cat.paramDesc  }}</option>
+        </select>
+      </div>
+
+      <div class="col-md-3">
+        <label for="group" class="form-label">Group</label>
+        <select id="group" class="form-select" [(ngModel)]="partData.group" name="group" required>
+          <option value="">Select Group</option>
+          <option *ngFor="let grp of groupList" [value]="grp.paramValue">{{ grp.paramDesc }}</option>
+        </select>
+      </div>
+
+      <div class="col-md-3">
+        <label for="coo" class="form-label">COO</label>
+        <select id="coo" class="form-select" [(ngModel)]="partData.coo" name="coo" required>
+          <option value="">Select COO</option>
+          <option *ngFor="let country of cooList" [value]="country.paramValue">{{ country.paramDesc }}</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="partdesc" class="form-label">Part Description</label>
+        <textarea id="partdesc" class="form-control" [(ngModel)]="partData.description"
+                  name="description" placeholder="Enter Part Description" rows="1" required></textarea>
+      </div>
+
+      <div class="col-12 text-center mt-5">
+        <button type="submit" class="btn btn-primary px-4">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

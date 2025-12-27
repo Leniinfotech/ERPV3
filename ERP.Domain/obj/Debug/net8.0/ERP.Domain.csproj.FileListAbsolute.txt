@@ -1,0 +1,33 @@
+C:\ChrisData\ERP-main\Code\ERP.Domain\bin\Debug\net8.0\ERP.Domain.deps.json
+C:\ChrisData\ERP-main\Code\ERP.Domain\bin\Debug\net8.0\ERP.Domain.dll
+C:\ChrisData\ERP-main\Code\ERP.Domain\bin\Debug\net8.0\ERP.Domain.pdb
+C:\ChrisData\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\ChrisData\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.AssemblyInfoInputs.cache
+C:\ChrisData\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.AssemblyInfo.cs
+C:\ChrisData\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.csproj.CoreCompileInputs.cache
+C:\ChrisData\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.dll
+C:\ChrisData\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\refint\ERP.Domain.dll
+C:\ChrisData\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.pdb
+C:\ChrisData\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\ref\ERP.Domain.dll
+C:\Users\chris\ERP-main\Code\ERP.Domain\bin\Debug\net8.0\ERP.Domain.deps.json
+C:\Users\chris\ERP-main\Code\ERP.Domain\bin\Debug\net8.0\ERP.Domain.dll
+C:\Users\chris\ERP-main\Code\ERP.Domain\bin\Debug\net8.0\ERP.Domain.pdb
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.AssemblyInfoInputs.cache
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.AssemblyInfo.cs
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.csproj.CoreCompileInputs.cache
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.dll
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\refint\ERP.Domain.dll
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.pdb
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Debug\net8.0\ref\ERP.Domain.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Domain\bin\Debug\net8.0\ERP.Domain.deps.json
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Domain\bin\Debug\net8.0\ERP.Domain.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Domain\bin\Debug\net8.0\ERP.Domain.pdb
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.AssemblyInfoInputs.cache
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.AssemblyInfo.cs
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.csproj.CoreCompileInputs.cache
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Domain\obj\Debug\net8.0\refint\ERP.Domain.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Domain\obj\Debug\net8.0\ERP.Domain.pdb
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Domain\obj\Debug\net8.0\ref\ERP.Domain.dll

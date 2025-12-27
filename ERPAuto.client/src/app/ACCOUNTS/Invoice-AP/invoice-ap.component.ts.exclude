@@ -1,0 +1,127 @@
+import {
+  Component,
+  OnInit,
+  AfterViewInit,
+  ViewChild,
+  ElementRef
+} from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { Chart, registerables } from 'chart.js';
+
+Chart.register(...registerables);
+
+interface VendorSummary {
+  vendor: string;
+  invoices: number;
+  payments: number;
+  status?: string;
+}
+
+@Component({
+  selector: 'app-accountpayable',
+  standalone: true,
+  imports: [CommonModule, FormsModule],
+  templateUrl: './invoice-ap.component.html',
+  styleUrls: ['./invoice-ap.component.css']
+})
+export class InvoiceAP implements OnInit, AfterViewInit {
+  @ViewChild('apChart') chartRef!: ElementRef<HTMLCanvasElement>;
+  chartInstance: Chart | null = null;
+
+  vendorSummary: VendorSummary[] = []; // Empty for backend integration
+  paginatedVendors: VendorSummary[] = [];
+
+  currentPage = 1;
+  itemsPerPage = 5;
+  totalPages: number[] = [];
+
+  vendorName = '';
+  invoiceNumber = '';
+  selectedStatus = '';
+
+  isLoading = true;
+
+  ngOnInit(): void {
+    this.fetchVendorData();
+  }
+
+  ngAfterViewInit(): void {
+    this.renderChart();
+  }
+
+  fetchVendorData(): void {
+    // Simulate backend delay
+    setTimeout(() => {
+      this.vendorSummary = []; // Replace with API response later
+      this.isLoading = false;
+      this.updatePagination();
+    }, 1000);
+  }
+
+  onSearch(): void {
+    console.log('Search clicked:', this.vendorName, this.invoiceNumber, this.selectedStatus);
+    // Future: Apply filters to vendorSummary
+  }
+
+  updatePagination(): void {
+    const totalItems = this.vendorSummary.length;
+    const totalPages = Math.ceil(totalItems / this.itemsPerPage) || 1;
+    this.totalPages = Array.from({ length: totalPages }, (_, i) => i + 1);
+
+    const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+    const endIndex = startIndex + this.itemsPerPage;
+    this.paginatedVendors = this.vendorSummary.slice(startIndex, endIndex);
+  }
+
+  changePage(page: number): void {
+    if (page < 1 || page > this.totalPages.length) return;
+    this.currentPage = page;
+    this.updatePagination();
+  }
+
+  renderChart(): void {
+    if (this.chartInstance) {
+      this.chartInstance.destroy();
+    }
+
+    const ctx = this.chartRef.nativeElement.getContext('2d');
+    if (!ctx) {
+      console.error('Canvas context not found');
+      return;
+    }
+
+    this.chartInstance = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+        datasets: [
+          {
+            label: 'Receipts',
+            data: [10500, 21000, 19000, 22000, 25000, 30000],
+            backgroundColor: '#42a5f5'
+          },
+          {
+            label: 'Payments',
+            data: [9500, 11500, 12000, 18500, 20000, 22500],
+            backgroundColor: '#9e9e9e'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: 'top' }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              callback: value => `₹${value}`
+            }
+          }
+        }
+      }
+    });
+  }
+}

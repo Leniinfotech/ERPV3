@@ -1,0 +1,11 @@
+C:\Users\chris\ERP-main\Code\ERP.Domain\bin\Release\net8.0\ERP.Domain.deps.json
+C:\Users\chris\ERP-main\Code\ERP.Domain\bin\Release\net8.0\ERP.Domain.dll
+C:\Users\chris\ERP-main\Code\ERP.Domain\bin\Release\net8.0\ERP.Domain.pdb
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Release\net8.0\ERP.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Release\net8.0\ERP.Domain.AssemblyInfoInputs.cache
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Release\net8.0\ERP.Domain.AssemblyInfo.cs
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Release\net8.0\ERP.Domain.csproj.CoreCompileInputs.cache
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Release\net8.0\ERP.Domain.dll
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Release\net8.0\refint\ERP.Domain.dll
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Release\net8.0\ERP.Domain.pdb
+C:\Users\chris\ERP-main\Code\ERP.Domain\obj\Release\net8.0\ref\ERP.Domain.dll

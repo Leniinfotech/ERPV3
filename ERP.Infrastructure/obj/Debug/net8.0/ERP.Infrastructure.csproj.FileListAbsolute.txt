@@ -1,0 +1,63 @@
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Infrastructure.deps.json
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Infrastructure.dll
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Infrastructure.pdb
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Application.dll
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Contracts.dll
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Domain.dll
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Application.pdb
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Domain.pdb
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Contracts.pdb
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.csproj.AssemblyReference.cache
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.AssemblyInfoInputs.cache
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.AssemblyInfo.cs
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.csproj.CoreCompileInputs.cache
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infr.92BEE6A2.Up2Date
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.dll
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\refint\ERP.Infrastructure.dll
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.pdb
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ref\ERP.Infrastructure.dll
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Application.xml
+C:\ChrisData\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Contracts.xml
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.dll
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\refint\ERP.Infrastructure.dll
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.pdb
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.AssemblyInfo.cs
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Infrastructure.deps.json
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Infrastructure.dll
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Infrastructure.pdb
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Application.dll
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Contracts.dll
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Domain.dll
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Application.pdb
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Application.xml
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Domain.pdb
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Contracts.pdb
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Contracts.xml
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infr.92BEE6A2.Up2Date
+C:\Users\chris\ERP-main\Code\ERP.Infrastructure\obj\Debug\net8.0\ref\ERP.Infrastructure.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Infrastructure.deps.json
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Infrastructure.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Infrastructure.pdb
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Application.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Contracts.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Domain.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Application.pdb
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Application.xml
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Domain.pdb
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Contracts.pdb
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\bin\Debug\net8.0\ERP.Contracts.xml
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.csproj.AssemblyReference.cache
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.AssemblyInfoInputs.cache
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.AssemblyInfo.cs
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.csproj.CoreCompileInputs.cache
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infr.92BEE6A2.Up2Date
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\obj\Debug\net8.0\refint\ERP.Infrastructure.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\obj\Debug\net8.0\ERP.Infrastructure.pdb
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Infrastructure\obj\Debug\net8.0\ref\ERP.Infrastructure.dll

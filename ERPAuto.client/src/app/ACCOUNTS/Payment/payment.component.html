@@ -1,0 +1,86 @@
+<div class="payment-wrapper mt-2">
+
+  <div class="card shadow-sm">
+    <div class="card-header d-flex justify-content-between align-items-center text-white">
+      <h5 class="mb-0">
+        <!--<i class="bi bi-receipt-cutoff"></i> &nbsp; Bill Summary (Receivables)-->
+        <i class="bi bi-receipt-cutoff"></i>&nbsp; Bill Summary ({{ billSummaryTitle }})
+
+      </h5>
+
+      <button class="btn btn-light btn-sm text-primary fw-bold" (click)="printPage()">
+        <i class="bi bi-printer"></i> Print
+      </button>
+    </div>
+
+    <div class="card-body">
+
+      <!-- Sale No -->
+      <div class="mb-2">
+        <label class="form-label">Sale No</label>
+        <input type="text" class="form-control reduced-input" [value]="saleNo" disabled>
+      </div>
+
+      <!-- Sale Date -->
+      <div class="mb-2">
+        <label class="form-label">Sale Date</label>
+        <input type="date" class="form-control reduced-input" [(ngModel)]="saleDate">
+      </div>
+
+      <!-- Bill Amount + Receivable -->
+      <div class="row mb-2">
+        <div class="col-md-4">
+          <label class="form-label">Bill Amount</label>
+          <input type="text" class="form-control reduced-input fw-bold text-primary" [value]="billAmount" disabled>
+        </div>
+
+        <div class="col-md-4">
+          <label class="form-label">Receivable Amount</label>
+          <input type="text" class="form-control reduced-input fw-bold text-primary"
+                 [value]="receivableAmount" disabled>
+        </div>
+
+        <div class="col-md-4">
+          <label class="form-label">Pay Now Amount</label>
+          <input type="text" class="form-control reduced-input fw-bold text-primary"
+                 [(ngModel)]="paynowAmount">
+        </div>
+      </div>
+
+      <!-- Payment Method -->
+      <div class="mb-2">
+        <label class="form-label">Payment Method</label>
+        <select class="form-control reduced-input" [(ngModel)]="paymentMethod">
+          <option value="" disabled>Select Method</option>
+          <option value="card">Credit / Debit Card</option>
+          <option value="cash">Cash</option>
+          <option value="bank">Bank Transfer</option>
+          <option value="cheque">Cheque</option>
+        </select>
+      </div>
+
+      <!-- Card Number -->
+      <div class="mb-2">
+        <label class="form-label">Card Number (Optional)</label>
+        <input type="text" class="form-control reduced-input"
+               placeholder="XXXX-XXXX-XXXX-1234" [(ngModel)]="cardNumber">
+      </div>
+
+      <!-- Remarks -->
+      <div class="mb-2">
+        <label class="form-label">Remarks (Optional)</label>
+        <textarea class="form-control reduced-input"
+                  rows="1" placeholder="Enter any additional remarks"
+                  [(ngModel)]="remarks"></textarea>
+      </div>
+
+      <!-- Confirm Payment BUTTON -->
+      <div class="text-center mt-2 mb-1">
+        <button class="btn btn-primary px-4 fw-bold" (click)="confirmPayment()">
+          <i class="bi bi-credit-card"></i> Confirm Payment
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>

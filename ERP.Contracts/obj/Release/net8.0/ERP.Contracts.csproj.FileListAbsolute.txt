@@ -1,0 +1,13 @@
+C:\Users\chris\ERP-main\Code\ERP.Contracts\bin\Release\net8.0\ERP.Contracts.deps.json
+C:\Users\chris\ERP-main\Code\ERP.Contracts\bin\Release\net8.0\ERP.Contracts.dll
+C:\Users\chris\ERP-main\Code\ERP.Contracts\bin\Release\net8.0\ERP.Contracts.pdb
+C:\Users\chris\ERP-main\Code\ERP.Contracts\bin\Release\net8.0\ERP.Contracts.xml
+C:\Users\chris\ERP-main\Code\ERP.Contracts\obj\Release\net8.0\ERP.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\ERP-main\Code\ERP.Contracts\obj\Release\net8.0\ERP.Contracts.AssemblyInfoInputs.cache
+C:\Users\chris\ERP-main\Code\ERP.Contracts\obj\Release\net8.0\ERP.Contracts.AssemblyInfo.cs
+C:\Users\chris\ERP-main\Code\ERP.Contracts\obj\Release\net8.0\ERP.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\chris\ERP-main\Code\ERP.Contracts\obj\Release\net8.0\ERP.Contracts.dll
+C:\Users\chris\ERP-main\Code\ERP.Contracts\obj\Release\net8.0\refint\ERP.Contracts.dll
+C:\Users\chris\ERP-main\Code\ERP.Contracts\obj\Release\net8.0\ERP.Contracts.xml
+C:\Users\chris\ERP-main\Code\ERP.Contracts\obj\Release\net8.0\ERP.Contracts.pdb
+C:\Users\chris\ERP-main\Code\ERP.Contracts\obj\Release\net8.0\ref\ERP.Contracts.dll

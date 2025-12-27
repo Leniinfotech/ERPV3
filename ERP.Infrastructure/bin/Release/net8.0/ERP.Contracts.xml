@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ERP.Contracts</name>
+    </assembly>
+    <members>
+        <member name="T:ERP.Contracts.Inventory.InventoryLocationDto">
+            <summary>Represents an inventory location (warehouse).</summary>
+        </member>
+        <member name="T:ERP.Contracts.Master.BranchDto">
+            <summary>Represents a Branch (dbo.BRCH).</summary>
+        </member>
+        <member name="T:ERP.Contracts.Master.PartDto">
+            <summary>Represents a Part master record.</summary>
+        </member>
+        <member name="P:ERP.Contracts.Master.PartDto.PartCode">
+            <summary>Part code (business key).</summary>
+        </member>
+        <member name="P:ERP.Contracts.Master.PartDto.Description">
+            <summary>Description.</summary>
+        </member>
+        <member name="T:ERP.Contracts.Master.SupplierDto">
+            <summary>Represents a Supplier master record.</summary>
+        </member>
+        <member name="P:ERP.Contracts.Master.SupplierDto.SupplierCode">
+            <summary>Supplier business code.</summary>
+        </member>
+        <member name="T:ERP.Contracts.Orders.PurchaseOrderDto">
+            <summary>Represents a purchase order header.</summary>
+        </member>
+        <member name="P:ERP.Contracts.Orders.PurchaseOrderDto.PoDate">
+            <summary>ISO date string (yyyy-MM-dd).</summary>
+        </member>
+        <member name="P:ERP.Contracts.Orders.PurchaseOrderDto.Lines">
+            <summary>Lines belonging to this purchase order.</summary>
+        </member>
+        <member name="T:ERP.Contracts.Orders.PurchaseOrderLineDto">
+            <summary>Represents a purchase order line.</summary>
+        </member>
+        <member name="P:ERP.Contracts.Orders.PurchaseOrderLineDto.PoDate">
+            <summary>ISO date string (yyyy-MM-dd).</summary>
+        </member>
+        <member name="T:ERP.Contracts.Orders.ShipmentDto">
+            <summary>Represents a shipment (sales invoice header).</summary>
+        </member>
+        <member name="P:ERP.Contracts.Orders.ShipmentDto.ShipmentDate">
+            <summary>ISO date string (yyyy-MM-dd).</summary>
+        </member>
+    </members>
+</doc>

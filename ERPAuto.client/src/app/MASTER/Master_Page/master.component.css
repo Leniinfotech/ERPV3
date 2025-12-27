@@ -1,0 +1,171 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f6fb;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #004a99 0%, #007bff 100%) !important;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 56px;
+  background: linear-gradient(90deg, #004a99 0%, #007bff 100%) !important;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  border-radius: 5px;
+}
+
+.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.brand-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.main-container {
+  display: flex;
+  height: calc(100vh - 112px);
+  margin-top: 56px;
+  margin-bottom: 56px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  overflow: hidden !important;
+}
+
+.sidebar {
+  display: flex;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  bottom: 56px;
+  z-index: 1020;
+}
+
+.icon-bar {
+  width: 70px;
+  background-color: #66b3ff;
+  color: white;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.icon-item {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+  cursor: pointer;
+  padding: 4px 0;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+  .icon-item i {
+    font-size: 1.5rem;
+    display: block;
+  }
+
+  .icon-item:hover,
+  .icon-item.active {
+    background-color: #3399ff;
+  }
+
+.icon-text {
+  font-size: 0.7rem;
+  display: block;
+  margin-top: 5px;
+}
+
+.expand-panel {
+  position: fixed;
+  top: 56px;
+  left: 70px;
+  height: calc(100vh - 112px);
+  width: 0;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  border-radius: 0 10px 10px 0;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  z-index: 1010;
+}
+
+  .expand-panel.show {
+    width: 250px;
+    opacity: 1;
+  }
+
+.menu-title {
+  font-weight: 600;
+  color: #004a99;
+  margin-bottom: 10px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 6px 0;
+  transition: all 0.2s;
+}
+
+  .menu-link:hover {
+    color: #007bff;
+    text-decoration: underline;
+  }
+
+.content-panel {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+  transition: margin-left 0.3s ease;
+  margin-left: 70px;
+  height: calc(100vh - 132px);
+}
+
+.main-container.sidebar-expanded .content-panel {
+  margin-left: 320px !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+  .logout-btn:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+  }

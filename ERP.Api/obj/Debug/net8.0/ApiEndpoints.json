@@ -1,0 +1,6966 @@
+[
+  {
+    "ContainingType": "ERP.Api.Controllers.AppointmentController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/Appointment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.AppointmentController",
+    "Method": "Create",
+    "RelativePath": "api/v1/Appointment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.Appointment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.AppointmentController",
+    "Method": "Update",
+    "RelativePath": "api/v1/Appointment",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.Appointment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.AppointmentController",
+    "Method": "Get",
+    "RelativePath": "api/v1/Appointment/{fran}/{appointId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "appointId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.AppointmentController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/Appointment/{fran}/{appointId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "appointId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Diagnostics.DiagnosticsController",
+    "Method": "Correlation",
+    "RelativePath": "api/v1/diagnostics/correlation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Diagnostics.DiagnosticsController",
+    "Method": "Health",
+    "RelativePath": "api/v1/diagnostics/health",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.EmployeeMasterController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/EmployeeMaster",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.EmployeeMasterController",
+    "Method": "Create",
+    "RelativePath": "api/v1/EmployeeMaster",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.EmployeeMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.EmployeeMasterController",
+    "Method": "Update",
+    "RelativePath": "api/v1/EmployeeMaster",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.EmployeeMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.EmployeeMasterController",
+    "Method": "Get",
+    "RelativePath": "api/v1/EmployeeMaster/{fran}/{employee}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "employee",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.EmployeeMasterController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/EmployeeMaster/{fran}/{employee}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "employee",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Finance.ChartOfAccountsController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/finance/ChartOfAccounts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Finance.ChartOfAccountsDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Finance.ChartOfAccountsController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/finance/ChartOfAccounts/{fran}/{accountType}/{accountCode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "accountType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "accountCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Finance.ChartOfAccountsDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Finance.JournalEntriesController",
+    "Method": "InsertJournal",
+    "RelativePath": "api/v1/finance/JournalEntries/InsertJournal",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ERP.Contracts.Finance.InsertJournalEntryRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Finance.JournalEntryLinesController",
+    "Method": "Get",
+    "RelativePath": "api/v1/finance/JournalEntryLines",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Finance.JournalEntryLineDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Finance.JournalEntryLinesController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/finance/JournalEntryLines/{fran}/{journalEntryId}/{journalEntryLineId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "journalEntryId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "journalEntryLineId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Finance.JournalEntryLineDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Finance.ParamsController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/finance/Params",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Finance.ParamsDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Finance.ParamsController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/finance/Params/{fran}/{paramType}/{paramValue}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "paramType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "paramValue",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Finance.ParamsDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Finance.ParamsController",
+    "Method": "LoadParam",
+    "RelativePath": "api/v1/finance/Params/load/{fran}/{paramType}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "paramType",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Finance.LoadParam, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.CartonsController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/inventory/Cartons",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Inventory.CartonDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.CartonsController",
+    "Method": "Create",
+    "RelativePath": "api/v1/inventory/Cartons",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Inventory.CreateCartonRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.CartonDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.CartonsController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/inventory/Cartons/{fran}/{crtnType}/{crtnCatg}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtnType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtnCatg",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.CartonDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.CartonsController",
+    "Method": "Update",
+    "RelativePath": "api/v1/inventory/Cartons/{fran}/{crtnType}/{crtnCatg}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtnType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtnCatg",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Inventory.UpdateCartonRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.CartonsController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/inventory/Cartons/{fran}/{crtnType}/{crtnCatg}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtnType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtnCatg",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.CartonsController",
+    "Method": "GetLines",
+    "RelativePath": "api/v1/inventory/Cartons/lines",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Inventory.CartonDetailDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.CartonsController",
+    "Method": "CreateLine",
+    "RelativePath": "api/v1/inventory/Cartons/lines",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Inventory.CreateCartonDetailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.CartonDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.CartonsController",
+    "Method": "GetLineByKey",
+    "RelativePath": "api/v1/inventory/Cartons/lines/{cdf}/{cdb}/{cdw}/{cdcrtn}/{cdtype}/{cdsrl}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cdf",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cdb",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cdw",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cdcrtn",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cdtype",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cdsrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.CartonDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.CartonsController",
+    "Method": "UpdateLine",
+    "RelativePath": "api/v1/inventory/Cartons/lines/{cdf}/{cdb}/{cdw}/{cdcrtn}/{cdtype}/{cdsrl}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cdf",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cdb",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cdw",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cdcrtn",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cdtype",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cdsrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Inventory.UpdateCartonDetailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.CartonsController",
+    "Method": "DeleteLine",
+    "RelativePath": "api/v1/inventory/Cartons/lines/{cdf}/{cdb}/{cdw}/{cdcrtn}/{cdtype}/{cdsrl}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cdf",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cdb",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cdw",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cdcrtn",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cdtype",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cdsrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.InventoryLocationsController",
+    "Method": "Get",
+    "RelativePath": "api/v1/inventory/InventoryLocations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Inventory.InventoryLocationDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.InventoryLocationsController",
+    "Method": "Create",
+    "RelativePath": "api/v1/inventory/InventoryLocations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ERP.Contracts.Inventory.InventoryLocationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.InventoryLocationDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.InventoryLocationsController",
+    "Method": "GetByCode",
+    "RelativePath": "api/v1/inventory/InventoryLocations/{warehouseCode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "warehouseCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.InventoryLocationDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.InventoryLocationsController",
+    "Method": "Update",
+    "RelativePath": "api/v1/inventory/InventoryLocations/{warehouseCode}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "warehouseCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "ERP.Contracts.Inventory.InventoryLocationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.InventoryLocationDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.InventoryLocationsController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/inventory/InventoryLocations/{warehouseCode}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "warehouseCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.PackingController",
+    "Method": "GetHeaders",
+    "RelativePath": "api/v1/inventory/Packing/headers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Inventory.PackingHeaderDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.PackingController",
+    "Method": "CreateHeader",
+    "RelativePath": "api/v1/inventory/Packing/headers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Inventory.CreatePackingHeaderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.PackingHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.PackingController",
+    "Method": "GetHeaderByKey",
+    "RelativePath": "api/v1/inventory/Packing/headers/{fran}/{brch}/{whse}/{packType}/{packNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "whse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "packType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "packNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.PackingHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.PackingController",
+    "Method": "UpdateHeader",
+    "RelativePath": "api/v1/inventory/Packing/headers/{fran}/{brch}/{whse}/{packType}/{packNo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "whse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "packType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "packNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Inventory.UpdatePackingHeaderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.PackingController",
+    "Method": "DeleteHeader",
+    "RelativePath": "api/v1/inventory/Packing/headers/{fran}/{brch}/{whse}/{packType}/{packNo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "whse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "packType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "packNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.PackingController",
+    "Method": "GetLines",
+    "RelativePath": "api/v1/inventory/Packing/lines",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Inventory.PackingDetailDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.PackingController",
+    "Method": "CreateLine",
+    "RelativePath": "api/v1/inventory/Packing/lines",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Inventory.CreatePackingDetailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.PackingDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.PackingController",
+    "Method": "GetLineByKey",
+    "RelativePath": "api/v1/inventory/Packing/lines/{fran}/{brch}/{whse}/{packType}/{packNo}/{packSrl}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "whse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "packType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "packNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "packSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.PackingDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.PackingController",
+    "Method": "UpdateLine",
+    "RelativePath": "api/v1/inventory/Packing/lines/{fran}/{brch}/{whse}/{packType}/{packNo}/{packSrl}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "whse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "packType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "packNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "packSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Inventory.UpdatePackingDetailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.PackingController",
+    "Method": "DeleteLine",
+    "RelativePath": "api/v1/inventory/Packing/lines/{fran}/{brch}/{whse}/{packType}/{packNo}/{packSrl}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "whse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "packType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "packNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "packSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.PatternCartonsController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/inventory/PatternCartons",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Inventory.PatternCartonHeaderDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.PatternCartonsController",
+    "Method": "Create",
+    "RelativePath": "api/v1/inventory/PatternCartons",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Inventory.CreatePatternCartonHeaderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.PatternCartonHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.PatternCartonsController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/inventory/PatternCartons/{fran}/{branch}/{warehouse}/{crtnType}/{crtn}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtnType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtn",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.PatternCartonHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.PatternCartonsController",
+    "Method": "Update",
+    "RelativePath": "api/v1/inventory/PatternCartons/{fran}/{branch}/{warehouse}/{crtnType}/{crtn}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtnType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtn",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Inventory.UpdatePatternCartonHeaderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.PatternCartonHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.PatternCartonsController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/inventory/PatternCartons/{fran}/{branch}/{warehouse}/{crtnType}/{crtn}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtnType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtn",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.StoresController",
+    "Method": "Get",
+    "RelativePath": "api/v1/inventory/Stores",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Inventory.StoreDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.StoresController",
+    "Method": "Create",
+    "RelativePath": "api/v1/inventory/Stores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Inventory.CreateStoreRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.StoreDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.StoresController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/inventory/Stores/{fran}/{branch}/{warehouseCode}/{storeCode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouseCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "storeCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.StoreDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.StoresController",
+    "Method": "Update",
+    "RelativePath": "api/v1/inventory/Stores/{fran}/{branch}/{warehouseCode}/{storeCode}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouseCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "storeCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Inventory.UpdateStoreRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Inventory.StoreDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Inventory.StoresController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/inventory/Stores/{fran}/{branch}/{warehouseCode}/{storeCode}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouseCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "storeCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.BranchesController",
+    "Method": "Get",
+    "RelativePath": "api/v1/master/Branches",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Master.BranchDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.BranchesController",
+    "Method": "Create",
+    "RelativePath": "api/v1/master/Branches",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.CreateBranchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.BranchDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.BranchesController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/master/Branches/{branchCode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "branchCode",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.BranchDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.BranchesController",
+    "Method": "Update",
+    "RelativePath": "api/v1/master/Branches/{branchCode}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "branchCode",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.UpdateBranchRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.BranchDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.BranchesController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/master/Branches/{branchCode}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "branchCode",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.CompetitorsController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/master/Competitors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Master.CompetitorDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.CompetitorsController",
+    "Method": "Create",
+    "RelativePath": "api/v1/master/Competitors",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.CreateCompetitorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.CompetitorDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.CompetitorsController",
+    "Method": "GetByCode",
+    "RelativePath": "api/v1/master/Competitors/{competitorCode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "competitorCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.CompetitorDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.CompetitorsController",
+    "Method": "Update",
+    "RelativePath": "api/v1/master/Competitors/{competitorCode}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "competitorCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.UpdateCompetitorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.CompetitorDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.CompetitorsController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/master/Competitors/{competitorCode}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "competitorCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.CurrenciesController",
+    "Method": "Get",
+    "RelativePath": "api/v1/master/Currencies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Master.CurrencyDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.CurrenciesController",
+    "Method": "Create",
+    "RelativePath": "api/v1/master/Currencies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.CreateCurrencyRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.CurrencyDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.CurrenciesController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/master/Currencies/{currencyCode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currencyCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.CurrencyDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.CurrenciesController",
+    "Method": "Update",
+    "RelativePath": "api/v1/master/Currencies/{currencyCode}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currencyCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.UpdateCurrencyRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.CurrencyDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.CurrenciesController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/master/Currencies/{currencyCode}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currencyCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.CustomersController",
+    "Method": "Get",
+    "RelativePath": "api/v1/master/Customers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Master.CustomerDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.CustomersController",
+    "Method": "Create",
+    "RelativePath": "api/v1/master/Customers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Master.CreateCustomerRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.CustomerDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.CustomersController",
+    "Method": "GetByCode",
+    "RelativePath": "api/v1/master/Customers/{customerCode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.CustomerDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.CustomersController",
+    "Method": "Update",
+    "RelativePath": "api/v1/master/Customers/{customerCode}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Master.UpdateCustomerRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.CustomersController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/master/Customers/{customerCode}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.FinalPartsController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/master/FinalParts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Master.FinalPartDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.FinalPartsController",
+    "Method": "Create",
+    "RelativePath": "api/v1/master/FinalParts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.CreateFinalPartRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.FinalPartDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.FinalPartsController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/master/FinalParts/{fran}/{make}/{part}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "make",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "part",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.FinalPartDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.FinalPartsController",
+    "Method": "Update",
+    "RelativePath": "api/v1/master/FinalParts/{fran}/{make}/{part}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "make",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "part",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.UpdateFinalPartRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.FinalPartDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.FinalPartsController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/master/FinalParts/{fran}/{make}/{part}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "make",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "part",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.FranchisesController",
+    "Method": "Get",
+    "RelativePath": "api/v1/master/Franchises",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Master.FranchiseDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.FranchisesController",
+    "Method": "Create",
+    "RelativePath": "api/v1/master/Franchises",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.CreateFranchiseRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.FranchiseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.FranchisesController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/master/Franchises/{fran}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.FranchiseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.FranchisesController",
+    "Method": "Update",
+    "RelativePath": "api/v1/master/Franchises/{fran}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.UpdateFranchiseRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.FranchiseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.FranchisesController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/master/Franchises/{fran}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.MakesController",
+    "Method": "Get",
+    "RelativePath": "api/v1/master/Makes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Master.MakeDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.MakesController",
+    "Method": "Create",
+    "RelativePath": "api/v1/master/Makes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.CreateMakeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.MakeDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.MakesController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/master/Makes/{fran}/{makeCode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "makeCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.MakeDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.MakesController",
+    "Method": "Update",
+    "RelativePath": "api/v1/master/Makes/{fran}/{makeCode}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "makeCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.UpdateMakeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.MakeDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.MakesController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/master/Makes/{fran}/{makeCode}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "makeCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.MakesController",
+    "Method": "GetFromSP",
+    "RelativePath": "api/v1/master/Makes/GetMake",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Master.MakeDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.PartsController",
+    "Method": "Get",
+    "RelativePath": "api/v1/master/Parts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Master.PartDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.PartsController",
+    "Method": "GetByCode",
+    "RelativePath": "api/v1/master/Parts/{partCode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "partCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.PartDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.PartsController",
+    "Method": "AddPart",
+    "RelativePath": "api/v1/master/Parts/add-part",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.PartRequests",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.PartsController",
+    "Method": "GetAllPartsByStoredProc",
+    "RelativePath": "api/v1/master/Parts/Getparts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Master.PartDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.PriceGroupsController",
+    "Method": "GetAllFactors",
+    "RelativePath": "api/v1/master/PriceGroups/factors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Master.PriceGroupFactorDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.PriceGroupsController",
+    "Method": "CreateFactor",
+    "RelativePath": "api/v1/master/PriceGroups/factors",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.CreatePriceGroupFactorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.PriceGroupFactorDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.PriceGroupsController",
+    "Method": "GetFactorByKey",
+    "RelativePath": "api/v1/master/PriceGroups/factors/{fran}/{type}/{prcGrp}/{name}/{value}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "prcGrp",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "value",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.PriceGroupFactorDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.PriceGroupsController",
+    "Method": "UpdateFactor",
+    "RelativePath": "api/v1/master/PriceGroups/factors/{fran}/{type}/{prcGrp}/{name}/{value}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "prcGrp",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "value",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.UpdatePriceGroupFactorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.PriceGroupFactorDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.PriceGroupsController",
+    "Method": "DeleteFactor",
+    "RelativePath": "api/v1/master/PriceGroups/factors/{fran}/{type}/{prcGrp}/{name}/{value}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "prcGrp",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "value",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.PriceGroupsController",
+    "Method": "GetAllMasters",
+    "RelativePath": "api/v1/master/PriceGroups/masters",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Master.PriceGroupMasterDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.PriceGroupsController",
+    "Method": "CreateMaster",
+    "RelativePath": "api/v1/master/PriceGroups/masters",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.CreatePriceGroupMasterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.PriceGroupMasterDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.PriceGroupsController",
+    "Method": "GetMasterByKey",
+    "RelativePath": "api/v1/master/PriceGroups/masters/{fran}/{prcType}/{prcGrp}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "prcType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "prcGrp",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.PriceGroupMasterDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.PriceGroupsController",
+    "Method": "UpdateMaster",
+    "RelativePath": "api/v1/master/PriceGroups/masters/{fran}/{prcType}/{prcGrp}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "prcType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "prcGrp",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.UpdatePriceGroupMasterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.PriceGroupMasterDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.PriceGroupsController",
+    "Method": "DeleteMaster",
+    "RelativePath": "api/v1/master/PriceGroups/masters/{fran}/{prcType}/{prcGrp}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "prcType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "prcGrp",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.SubsPartsController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/master/SubsParts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Master.SubsPartDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.SubsPartsController",
+    "Method": "Create",
+    "RelativePath": "api/v1/master/SubsParts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.CreateSubsPartRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.SubsPartDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.SubsPartsController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/master/SubsParts/{fran}/{make}/{part}/{finalPart}/{grpNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "make",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "part",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "finalPart",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "grpNo",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.SubsPartDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.SubsPartsController",
+    "Method": "Update",
+    "RelativePath": "api/v1/master/SubsParts/{fran}/{make}/{part}/{finalPart}/{grpNo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "make",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "part",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "finalPart",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "grpNo",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Master.UpdateSubsPartRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.SubsPartDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.SubsPartsController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/master/SubsParts/{fran}/{make}/{part}/{finalPart}/{grpNo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "make",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "part",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "finalPart",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "grpNo",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.SuppliersController",
+    "Method": "Get",
+    "RelativePath": "api/v1/master/Suppliers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Master.SupplierDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.SuppliersController",
+    "Method": "Create",
+    "RelativePath": "api/v1/master/Suppliers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ERP.Contracts.Master.SupplierDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.SupplierDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.SuppliersController",
+    "Method": "GetByCode",
+    "RelativePath": "api/v1/master/Suppliers/{supplierCode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.SupplierDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.SuppliersController",
+    "Method": "Update",
+    "RelativePath": "api/v1/master/Suppliers/{supplierCode}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "ERP.Contracts.Master.SupplierDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.SupplierDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.SuppliersController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/master/Suppliers/{supplierCode}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "supplierCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.UsersController",
+    "Method": "Get",
+    "RelativePath": "api/v1/master/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Master.UserDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.UsersController",
+    "Method": "Create",
+    "RelativePath": "api/v1/master/Users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Master.CreateUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.UsersController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/master/Users/{fran}/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.UsersController",
+    "Method": "Update",
+    "RelativePath": "api/v1/master/Users/{fran}/{userId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Master.UpdateUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.UsersController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/master/Users/{fran}/{userId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.WorkshopsController",
+    "Method": "Get",
+    "RelativePath": "api/v1/master/Workshops",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Master.WorkshopDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.WorkshopsController",
+    "Method": "Create",
+    "RelativePath": "api/v1/master/Workshops",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Master.CreateWorkshopRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.WorkshopDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.WorkshopsController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/master/Workshops/{fran}/{workshopId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workshopId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Master.WorkshopDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.WorkshopsController",
+    "Method": "Update",
+    "RelativePath": "api/v1/master/Workshops/{fran}/{workshopId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workshopId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Master.UpdateWorkshopRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Master.WorkshopsController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/master/Workshops/{fran}/{workshopId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workshopId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.CustomerOrdersController",
+    "Method": "GetAllHeaders",
+    "RelativePath": "api/v1/orders/CustomerOrders/headers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Orders.CustomerOrderHeaderDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.CustomerOrdersController",
+    "Method": "CreateHeader",
+    "RelativePath": "api/v1/orders/CustomerOrders/headers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.CreateCustomerOrderHeaderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.CustomerOrderHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.CustomerOrdersController",
+    "Method": "GetHeaderByKey",
+    "RelativePath": "api/v1/orders/CustomerOrders/headers/{fran}/{branch}/{warehouse}/{cordType}/{cordNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cordType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cordNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.CustomerOrderHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.CustomerOrdersController",
+    "Method": "UpdateHeader",
+    "RelativePath": "api/v1/orders/CustomerOrders/headers/{fran}/{branch}/{warehouse}/{cordType}/{cordNo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cordType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cordNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.UpdateCustomerOrderHeaderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.CustomerOrderHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.CustomerOrdersController",
+    "Method": "DeleteHeader",
+    "RelativePath": "api/v1/orders/CustomerOrders/headers/{fran}/{branch}/{warehouse}/{cordType}/{cordNo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cordType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cordNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.CustomerOrdersController",
+    "Method": "GetAllDetails",
+    "RelativePath": "api/v1/orders/CustomerOrders/lines",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Orders.CustomerOrderDetailDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.CustomerOrdersController",
+    "Method": "CreateDetail",
+    "RelativePath": "api/v1/orders/CustomerOrders/lines",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.CreateCustomerOrderDetailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.CustomerOrderDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.CustomerOrdersController",
+    "Method": "GetDetailByKey",
+    "RelativePath": "api/v1/orders/CustomerOrders/lines/{fran}/{branch}/{warehouse}/{cordType}/{cordNo}/{cordSrl}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cordType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cordNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cordSrl",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.CustomerOrderDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.CustomerOrdersController",
+    "Method": "UpdateDetail",
+    "RelativePath": "api/v1/orders/CustomerOrders/lines/{fran}/{branch}/{warehouse}/{cordType}/{cordNo}/{cordSrl}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cordType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cordNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cordSrl",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.UpdateCustomerOrderDetailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.CustomerOrderDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.CustomerOrdersController",
+    "Method": "DeleteDetail",
+    "RelativePath": "api/v1/orders/CustomerOrders/lines/{fran}/{branch}/{warehouse}/{cordType}/{cordNo}/{cordSrl}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cordType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cordNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "cordSrl",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.LoadingAdviceController",
+    "Method": "GetAllDetails",
+    "RelativePath": "api/v1/orders/LoadingAdvice/details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Orders.LoadingAdviceDetailDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.LoadingAdviceController",
+    "Method": "CreateDetail",
+    "RelativePath": "api/v1/orders/LoadingAdvice/details",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.CreateLoadingAdviceDetailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.LoadingAdviceDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.LoadingAdviceController",
+    "Method": "GetDetailByKey",
+    "RelativePath": "api/v1/orders/LoadingAdvice/details/{fran}/{branch}/{warehouse}/{laType}/{laNo}/{crtnType}/{crtn}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "laType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "laNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtnType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtn",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.LoadingAdviceDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.LoadingAdviceController",
+    "Method": "UpdateDetail",
+    "RelativePath": "api/v1/orders/LoadingAdvice/details/{fran}/{branch}/{warehouse}/{laType}/{laNo}/{crtnType}/{crtn}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "laType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "laNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtnType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtn",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.UpdateLoadingAdviceDetailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.LoadingAdviceDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.LoadingAdviceController",
+    "Method": "DeleteDetail",
+    "RelativePath": "api/v1/orders/LoadingAdvice/details/{fran}/{branch}/{warehouse}/{laType}/{laNo}/{crtnType}/{crtn}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "laType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "laNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtnType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "crtn",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.LoadingAdviceController",
+    "Method": "GetAllDetails2",
+    "RelativePath": "api/v1/orders/LoadingAdvice/details2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Orders.LoadingAdviceDetail2Dto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.LoadingAdviceController",
+    "Method": "CreateDetail2",
+    "RelativePath": "api/v1/orders/LoadingAdvice/details2",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.CreateLoadingAdviceDetail2Request",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.LoadingAdviceDetail2Dto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.LoadingAdviceController",
+    "Method": "GetDetail2ByKey",
+    "RelativePath": "api/v1/orders/LoadingAdvice/details2/{fran}/{branch}/{warehouse}/{invType}/{invNo}/{invSrl}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "invType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "invNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "invSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.LoadingAdviceDetail2Dto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.LoadingAdviceController",
+    "Method": "UpdateDetail2",
+    "RelativePath": "api/v1/orders/LoadingAdvice/details2/{fran}/{branch}/{warehouse}/{invType}/{invNo}/{invSrl}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "invType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "invNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "invSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.UpdateLoadingAdviceDetail2Request",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.LoadingAdviceDetail2Dto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.LoadingAdviceController",
+    "Method": "DeleteDetail2",
+    "RelativePath": "api/v1/orders/LoadingAdvice/details2/{fran}/{branch}/{warehouse}/{invType}/{invNo}/{invSrl}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "invType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "invNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "invSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.LoadingAdviceController",
+    "Method": "GetAllHeaders",
+    "RelativePath": "api/v1/orders/LoadingAdvice/headers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Orders.LoadingAdviceHeaderDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.LoadingAdviceController",
+    "Method": "CreateHeader",
+    "RelativePath": "api/v1/orders/LoadingAdvice/headers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.CreateLoadingAdviceHeaderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.LoadingAdviceHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.LoadingAdviceController",
+    "Method": "GetHeaderByKey",
+    "RelativePath": "api/v1/orders/LoadingAdvice/headers/{fran}/{branch}/{warehouse}/{laType}/{laNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "laType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "laNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.LoadingAdviceHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.LoadingAdviceController",
+    "Method": "UpdateHeader",
+    "RelativePath": "api/v1/orders/LoadingAdvice/headers/{fran}/{branch}/{warehouse}/{laType}/{laNo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "laType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "laNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.UpdateLoadingAdviceHeaderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.LoadingAdviceHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.LoadingAdviceController",
+    "Method": "DeleteHeader",
+    "RelativePath": "api/v1/orders/LoadingAdvice/headers/{fran}/{branch}/{warehouse}/{laType}/{laNo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "laType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "laNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.OrderPlansController",
+    "Method": "GetAllDetails",
+    "RelativePath": "api/v1/orders/OrderPlans/details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Orders.OrderPlanDetailDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.OrderPlansController",
+    "Method": "CreateDetail",
+    "RelativePath": "api/v1/orders/OrderPlans/details",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.CreateOrderPlanDetailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.OrderPlanDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.OrderPlansController",
+    "Method": "GetDetailByKey",
+    "RelativePath": "api/v1/orders/OrderPlans/details/{fran}/{branch}/{warehouse}/{planType}/{planNo}/{planSrl}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "planType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "planNo",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "planSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.OrderPlanDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.OrderPlansController",
+    "Method": "UpdateDetail",
+    "RelativePath": "api/v1/orders/OrderPlans/details/{fran}/{branch}/{warehouse}/{planType}/{planNo}/{planSrl}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "planType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "planNo",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "planSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.UpdateOrderPlanDetailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.OrderPlanDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.OrderPlansController",
+    "Method": "DeleteDetail",
+    "RelativePath": "api/v1/orders/OrderPlans/details/{fran}/{branch}/{warehouse}/{planType}/{planNo}/{planSrl}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "planType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "planNo",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "planSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.OrderPlansController",
+    "Method": "GetAllHeaders",
+    "RelativePath": "api/v1/orders/OrderPlans/headers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Orders.OrderPlanHeaderDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.OrderPlansController",
+    "Method": "CreateHeader",
+    "RelativePath": "api/v1/orders/OrderPlans/headers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.CreateOrderPlanHeaderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.OrderPlanHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.OrderPlansController",
+    "Method": "GetHeaderByKey",
+    "RelativePath": "api/v1/orders/OrderPlans/headers/{fran}/{branch}/{warehouse}/{planType}/{planNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "planType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "planNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.OrderPlanHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.OrderPlansController",
+    "Method": "UpdateHeader",
+    "RelativePath": "api/v1/orders/OrderPlans/headers/{fran}/{branch}/{warehouse}/{planType}/{planNo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "planType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "planNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.UpdateOrderPlanHeaderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.OrderPlanHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.OrderPlansController",
+    "Method": "DeleteHeader",
+    "RelativePath": "api/v1/orders/OrderPlans/headers/{fran}/{branch}/{warehouse}/{planType}/{planNo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "planType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "planNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.OrderPlansController",
+    "Method": "GetAllMasters",
+    "RelativePath": "api/v1/orders/OrderPlans/masters",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Orders.OrderPlanMasterDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.OrderPlansController",
+    "Method": "CreateMaster",
+    "RelativePath": "api/v1/orders/OrderPlans/masters",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.CreateOrderPlanMasterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.OrderPlanMasterDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.OrderPlansController",
+    "Method": "GetMasterByKey",
+    "RelativePath": "api/v1/orders/OrderPlans/masters/{fran}/{type}/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.OrderPlanMasterDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.OrderPlansController",
+    "Method": "UpdateMaster",
+    "RelativePath": "api/v1/orders/OrderPlans/masters/{fran}/{type}/{name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.UpdateOrderPlanMasterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.OrderPlanMasterDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.OrderPlansController",
+    "Method": "DeleteMaster",
+    "RelativePath": "api/v1/orders/OrderPlans/masters/{fran}/{type}/{name}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.PoAllocationsController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/orders/PoAllocations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Orders.PoAllocationDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.PoAllocationsController",
+    "Method": "Create",
+    "RelativePath": "api/v1/orders/PoAllocations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.CreatePoAllocationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.PoAllocationDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.PoAllocationsController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/orders/PoAllocations/{fran}/{branch}/{warehouse}/{alocSrl}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "alocSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.PoAllocationDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.PoAllocationsController",
+    "Method": "Update",
+    "RelativePath": "api/v1/orders/PoAllocations/{fran}/{branch}/{warehouse}/{alocSrl}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "alocSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.UpdatePoAllocationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.PoAllocationDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.PoAllocationsController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/orders/PoAllocations/{fran}/{branch}/{warehouse}/{alocSrl}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "alocSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.PoB2BController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/orders/PoB2B",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[ERP.Contracts.Orders.PoB2BDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.PoB2BController",
+    "Method": "Create",
+    "RelativePath": "api/v1/orders/PoB2B",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.CreatePoB2BRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.PoB2BDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.PoB2BController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/orders/PoB2B/{fran}/{branch}/{warehouse}/{b2bType}/{b2bNo}/{b2bSrl}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "b2bType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "b2bNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "b2bSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.PoB2BDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.PoB2BController",
+    "Method": "Update",
+    "RelativePath": "api/v1/orders/PoB2B/{fran}/{branch}/{warehouse}/{b2bType}/{b2bNo}/{b2bSrl}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "b2bType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "b2bNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "b2bSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "ERP.Contracts.Orders.UpdatePoB2BRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.PoB2BDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.PoB2BController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/orders/PoB2B/{fran}/{branch}/{warehouse}/{b2bType}/{b2bNo}/{b2bSrl}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "b2bType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "b2bNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "b2bSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.PurchaseOrdersController",
+    "Method": "Get",
+    "RelativePath": "api/v1/orders/PurchaseOrders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Orders.PurchaseOrderDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.PurchaseOrdersController",
+    "Method": "Create",
+    "RelativePath": "api/v1/orders/PurchaseOrders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ERP.Contracts.Orders.PurchaseOrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.PurchaseOrderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.PurchaseOrdersController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/orders/PurchaseOrders/{fran}/{branch}/{warehouseCode}/{poType}/{poNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouseCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "poType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "poNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.PurchaseOrderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.PurchaseOrdersController",
+    "Method": "Update",
+    "RelativePath": "api/v1/orders/PurchaseOrders/{fran}/{branch}/{warehouseCode}/{poType}/{poNumber}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouseCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "poType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "poNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "ERP.Contracts.Orders.PurchaseOrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.PurchaseOrderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.PurchaseOrdersController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/orders/PurchaseOrders/{fran}/{branch}/{warehouseCode}/{poType}/{poNumber}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouseCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "poType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "poNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ReceiptsController",
+    "Method": "GetHeaders",
+    "RelativePath": "api/v1/orders/Receipts/headers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Orders.ReceiptHeaderDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ReceiptsController",
+    "Method": "CreateHeader",
+    "RelativePath": "api/v1/orders/Receipts/headers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Orders.CreateReceiptHeaderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.ReceiptHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ReceiptsController",
+    "Method": "GetHeaderByKey",
+    "RelativePath": "api/v1/orders/Receipts/headers/{fran}/{brch}/{whse}/{rectType}/{rectNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "whse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rectType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rectNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.ReceiptHeaderDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ReceiptsController",
+    "Method": "UpdateHeader",
+    "RelativePath": "api/v1/orders/Receipts/headers/{fran}/{brch}/{whse}/{rectType}/{rectNo}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "whse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rectType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rectNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Orders.UpdateReceiptHeaderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ReceiptsController",
+    "Method": "DeleteHeader",
+    "RelativePath": "api/v1/orders/Receipts/headers/{fran}/{brch}/{whse}/{rectType}/{rectNo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "whse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rectType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rectNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ReceiptsController",
+    "Method": "GetLines",
+    "RelativePath": "api/v1/orders/Receipts/lines",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Orders.ReceiptDetailDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ReceiptsController",
+    "Method": "CreateLine",
+    "RelativePath": "api/v1/orders/Receipts/lines",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Orders.CreateReceiptDetailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.ReceiptDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ReceiptsController",
+    "Method": "GetLineByKey",
+    "RelativePath": "api/v1/orders/Receipts/lines/{fran}/{brch}/{whse}/{rectType}/{rectNo}/{rectSrl}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "whse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rectType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rectNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rectSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.ReceiptDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ReceiptsController",
+    "Method": "UpdateLine",
+    "RelativePath": "api/v1/orders/Receipts/lines/{fran}/{brch}/{whse}/{rectType}/{rectNo}/{rectSrl}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "whse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rectType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rectNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rectSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Orders.UpdateReceiptDetailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ReceiptsController",
+    "Method": "DeleteLine",
+    "RelativePath": "api/v1/orders/Receipts/lines/{fran}/{brch}/{whse}/{rectType}/{rectNo}/{rectSrl}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "whse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rectType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rectNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rectSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.SalesController",
+    "Method": "GetPayable",
+    "RelativePath": "api/v1/orders/Sales/payable",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Orders.SaleReceivablePayableDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.SalesController",
+    "Method": "GetReceivable",
+    "RelativePath": "api/v1/orders/Sales/receivable",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Orders.SaleReceivablePayableDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ShipmentLinesController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/orders/ShipmentLines",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Orders.ShipmentDetailDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ShipmentLinesController",
+    "Method": "Create",
+    "RelativePath": "api/v1/orders/ShipmentLines",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Orders.CreateShipmentDetailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.ShipmentDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ShipmentLinesController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/orders/ShipmentLines/{fran}/{brch}/{whse}/{type}/{no}/{srl}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "whse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "no",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "srl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.ShipmentDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ShipmentLinesController",
+    "Method": "Update",
+    "RelativePath": "api/v1/orders/ShipmentLines/{fran}/{brch}/{whse}/{type}/{no}/{srl}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "whse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "no",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "srl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "ERP.Contracts.Orders.UpdateShipmentDetailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ShipmentLinesController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/orders/ShipmentLines/{fran}/{brch}/{whse}/{type}/{no}/{srl}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "whse",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "type",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "no",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "srl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ShipmentsController",
+    "Method": "Get",
+    "RelativePath": "api/v1/orders/Shipments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Contracts.Orders.ShipmentDto, ERP.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ShipmentsController",
+    "Method": "Create",
+    "RelativePath": "api/v1/orders/Shipments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ERP.Contracts.Orders.ShipmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.ShipmentDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ShipmentsController",
+    "Method": "GetByKey",
+    "RelativePath": "api/v1/orders/Shipments/{fran}/{branch}/{warehouseCode}/{shipmentType}/{shipmentNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouseCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "shipmentType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "shipmentNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.ShipmentDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ShipmentsController",
+    "Method": "Update",
+    "RelativePath": "api/v1/orders/Shipments/{fran}/{branch}/{warehouseCode}/{shipmentType}/{shipmentNumber}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouseCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "shipmentType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "shipmentNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "ERP.Contracts.Orders.ShipmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Orders.ShipmentDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Orders.ShipmentsController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/orders/Shipments/{fran}/{branch}/{warehouseCode}/{shipmentType}/{shipmentNumber}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "warehouseCode",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "shipmentType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "shipmentNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.RepairHdrController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/RepairHdr",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.RepairHdrController",
+    "Method": "Create",
+    "RelativePath": "api/v1/RepairHdr",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.RepairHdr",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.RepairHdrController",
+    "Method": "Update",
+    "RelativePath": "api/v1/RepairHdr",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.RepairHdr",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.RepairHdrController",
+    "Method": "Get",
+    "RelativePath": "api/v1/RepairHdr/{fran}/{brch}/{workshop}/{repairType}/{repairNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workshop",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "repairType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "repairNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.RepairHdrController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/RepairHdr/{fran}/{brch}/{workshop}/{repairType}/{repairNo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workshop",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "repairType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "repairNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.RepairOrderController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/RepairOrder",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.RepairOrderController",
+    "Method": "Create",
+    "RelativePath": "api/v1/RepairOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.RepairOrder",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.RepairOrderController",
+    "Method": "Update",
+    "RelativePath": "api/v1/RepairOrder",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.RepairOrder",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.RepairOrderController",
+    "Method": "Get",
+    "RelativePath": "api/v1/RepairOrder/{fran}/{brch}/{workshop}/{repairType}/{repairNo}/{repairSrl}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workshop",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "repairType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "repairNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "repairSrl",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.RepairOrderController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/RepairOrder/{fran}/{brch}/{workshop}/{repairType}/{repairNo}/{repairSrl}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workshop",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "repairType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "repairNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "repairSrl",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.Reporting.InventoryReportsController",
+    "Method": "GetSummary",
+    "RelativePath": "api/v1/reporting/inventory/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "branch",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "warehouse",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "asOf",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ERP.Contracts.Reporting.InventorySummaryDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.VehicleMasterController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/VehicleMaster",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.VehicleMasterController",
+    "Method": "Create",
+    "RelativePath": "api/v1/VehicleMaster",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.VehicleMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.VehicleMasterController",
+    "Method": "Update",
+    "RelativePath": "api/v1/VehicleMaster",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.VehicleMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.VehicleMasterController",
+    "Method": "Get",
+    "RelativePath": "api/v1/VehicleMaster/{vechileId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vechileId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.VehicleMasterController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/VehicleMaster/{vechileId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vechileId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.WorkInvDetController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/WorkInvDet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.WorkInvDetController",
+    "Method": "Create",
+    "RelativePath": "api/v1/WorkInvDet",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.WorkInvDet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.WorkInvDetController",
+    "Method": "Update",
+    "RelativePath": "api/v1/WorkInvDet",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.WorkInvDet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.WorkInvDetController",
+    "Method": "Get",
+    "RelativePath": "api/v1/WorkInvDet/{fran}/{brch}/{workshop}/{workInvType}/{workInvNo}/{workInvSrl}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workshop",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workInvType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workInvNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workInvSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.WorkInvDetController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/WorkInvDet/{fran}/{brch}/{workshop}/{workInvType}/{workInvNo}/{workInvSrl}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workshop",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workInvType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workInvNo",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workInvSrl",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.WorkInvHdrController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/WorkInvHdr",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.WorkInvHdrController",
+    "Method": "Create",
+    "RelativePath": "api/v1/WorkInvHdr",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.WorkInvHdr",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.WorkInvHdrController",
+    "Method": "Update",
+    "RelativePath": "api/v1/WorkInvHdr",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.WorkInvHdr",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.WorkInvHdrController",
+    "Method": "Get",
+    "RelativePath": "api/v1/WorkInvHdr/{fran}/{brch}/{workshop}/{workInvType}/{workInvNo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workshop",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workInvType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workInvNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.WorkInvHdrController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/WorkInvHdr/{fran}/{brch}/{workshop}/{workInvType}/{workInvNo}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "brch",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workshop",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workInvType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workInvNo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.WorkMasterController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/WorkMaster",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.WorkMasterController",
+    "Method": "Create",
+    "RelativePath": "api/v1/WorkMaster",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.WorkMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.WorkMasterController",
+    "Method": "Update",
+    "RelativePath": "api/v1/WorkMaster",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.WorkMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.WorkMasterController",
+    "Method": "Get",
+    "RelativePath": "api/v1/WorkMaster/{fran}/{workType}/{workId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.V1.WorkMasterController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/WorkMaster/{fran}/{workType}/{workId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workId",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.WorkshopMasterController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/WorkshopMaster",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.WorkshopMasterController",
+    "Method": "Create",
+    "RelativePath": "api/v1/WorkshopMaster",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.WorkshopMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.WorkshopMasterController",
+    "Method": "Update",
+    "RelativePath": "api/v1/WorkshopMaster",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "ERP.Domain.Entities.WorkshopMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.WorkshopMasterController",
+    "Method": "Get",
+    "RelativePath": "api/v1/WorkshopMaster/{fran}/{workshop}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workshop",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.WorkshopMasterController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/WorkshopMaster/{fran}/{workshop}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fran",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "workshop",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ERP.Api.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ERP.Api.WeatherForecast, ERP.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

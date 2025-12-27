@@ -1,0 +1,125 @@
+<div class="container mt-2">
+  <div class="row">
+    <!-- LEFT SIDE: Search + Table -->
+    <div class="col-lg-8 col-md-12">
+      <div class="card shadow-sm mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center text-white">
+          <h5 class="mb-0">Account Receivable List</h5>
+          <button class="btn btn-warning btn-sm fw-bold">+ New Invoice</button>
+        </div>
+
+        <div class="card-body">
+          <!-- Search Section -->
+          <div class="row mb-3 align-items-end">
+            <!-- Customer Name -->
+            <div class="col-md-4">
+              <label for="customerName" class="form-label">Customer Name</label>
+              <input type="text"
+                     id="customerName"
+                     class="form-control"
+                     placeholder="Enter Customer Name"
+                     [(ngModel)]="customerName" />
+            </div>
+
+            <!-- Invoice Number -->
+            <div class="col-md-4">
+              <label for="invoiceNumber" class="form-label">Invoice Number</label>
+              <input type="text"
+                     id="invoiceNumber"
+                     class="form-control"
+                     placeholder="Enter Invoice No"
+                     [(ngModel)]="invoiceNumber" />
+            </div>
+
+            <!-- Status -->
+            <div class="col-md-3">
+              <label for="status" class="form-label">Status</label>
+              <select id="status"
+                      class="form-select"
+                      [(ngModel)]="selectedStatus">
+                <option value="">All</option>
+                <option value="Paid">Paid</option>
+                <option value="Pending">Pending</option>
+                <option value="Overdue">Overdue</option>
+              </select>
+            </div>
+
+            <!-- Search Icon Button -->
+            <div class="col-md-1 d-flex align-items-end">
+              <button class="btn btn-outline-primary w-100" (click)="onSearch()">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table Section -->
+      <div class="table-responsive mt-3">
+        <table class="table table-bordered table-striped text-center align-middle">
+          <thead class="table-primary">
+            <tr>
+              <th>Sl No</th>
+              <th>Customer</th>
+              <th>Invoices</th>
+              <th>Receipts</th>
+              <th>Balance</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngIf="customerSummary.length === 0">
+              <td colspan="7" class="text-muted">
+                No data available (data will load from backend)
+              </td>
+            </tr>
+
+            <tr *ngFor="let customer of paginatedCustomers; let i = index">
+              <td>{{ (currentPage - 1) * itemsPerPage + i + 1 }}</td>
+              <td>{{ customer.customer }}</td>
+              <td>{{ customer.invoices }}</td>
+              <td>{{ customer.receipts | number }}</td>
+              <td>{{ customer.balance | number }}</td>
+              <td>{{ customer.status || 'N/A' }}</td>
+              <td>
+                <button class="btn btn-sm btn-info me-1">Edit</button>
+                <button class="btn btn-sm btn-danger">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Pagination -->
+        <nav class="d-flex justify-content-center mt-3">
+          <ul class="pagination pagination-sm mb-0">
+            <li class="page-item" [class.disabled]="currentPage === 1">
+              <a class="page-link" (click)="changePage(currentPage - 1)">«</a>
+            </li>
+            <li class="page-item"
+                *ngFor="let page of totalPages"
+                [class.active]="page === currentPage">
+              <a class="page-link" (click)="changePage(page)">{{ page }}</a>
+            </li>
+            <li class="page-item"
+                [class.disabled]="currentPage === totalPages.length">
+              <a class="page-link" (click)="changePage(currentPage + 1)">»</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE: Chart -->
+    <div class="col-lg-4 col-md-12">
+      <div class="card shadow-sm chart-card">
+        <div class="card-header bg-primary text-white">
+          <h6 class="mb-0">AR Receipts by Month</h6>
+        </div>
+        <div class="card-body d-flex align-items-center justify-content-center">
+          <canvas #arChart></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

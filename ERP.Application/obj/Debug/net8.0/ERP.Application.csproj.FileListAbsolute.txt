@@ -1,0 +1,60 @@
+C:\ChrisData\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Application.deps.json
+C:\ChrisData\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Application.dll
+C:\ChrisData\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Application.pdb
+C:\ChrisData\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Contracts.dll
+C:\ChrisData\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Domain.dll
+C:\ChrisData\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Domain.pdb
+C:\ChrisData\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Contracts.pdb
+C:\ChrisData\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.csproj.AssemblyReference.cache
+C:\ChrisData\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\ChrisData\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.AssemblyInfoInputs.cache
+C:\ChrisData\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.AssemblyInfo.cs
+C:\ChrisData\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.csproj.CoreCompileInputs.cache
+C:\ChrisData\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Appl.DD782D7E.Up2Date
+C:\ChrisData\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.dll
+C:\ChrisData\ERP-main\Code\ERP.Application\obj\Debug\net8.0\refint\ERP.Application.dll
+C:\ChrisData\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.pdb
+C:\ChrisData\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ref\ERP.Application.dll
+C:\ChrisData\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Application.xml
+C:\ChrisData\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Contracts.xml
+C:\ChrisData\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.xml
+C:\Users\chris\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.dll
+C:\Users\chris\ERP-main\Code\ERP.Application\obj\Debug\net8.0\refint\ERP.Application.dll
+C:\Users\chris\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.xml
+C:\Users\chris\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.pdb
+C:\Users\chris\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Application.deps.json
+C:\Users\chris\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Application.dll
+C:\Users\chris\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Application.pdb
+C:\Users\chris\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Application.xml
+C:\Users\chris\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Contracts.dll
+C:\Users\chris\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Domain.dll
+C:\Users\chris\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Domain.pdb
+C:\Users\chris\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Contracts.pdb
+C:\Users\chris\ERP-main\Code\ERP.Application\bin\Debug\net8.0\ERP.Contracts.xml
+C:\Users\chris\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.csproj.AssemblyReference.cache
+C:\Users\chris\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.AssemblyInfoInputs.cache
+C:\Users\chris\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.AssemblyInfo.cs
+C:\Users\chris\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.csproj.CoreCompileInputs.cache
+C:\Users\chris\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ERP.Appl.DD782D7E.Up2Date
+C:\Users\chris\ERP-main\Code\ERP.Application\obj\Debug\net8.0\ref\ERP.Application.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\bin\Debug\net8.0\ERP.Application.deps.json
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\bin\Debug\net8.0\ERP.Application.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\bin\Debug\net8.0\ERP.Application.pdb
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\bin\Debug\net8.0\ERP.Application.xml
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\bin\Debug\net8.0\ERP.Contracts.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\bin\Debug\net8.0\ERP.Domain.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\bin\Debug\net8.0\ERP.Domain.pdb
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\bin\Debug\net8.0\ERP.Contracts.pdb
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\bin\Debug\net8.0\ERP.Contracts.xml
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.csproj.AssemblyReference.cache
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.AssemblyInfoInputs.cache
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.AssemblyInfo.cs
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.csproj.CoreCompileInputs.cache
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\obj\Debug\net8.0\ERP.Appl.DD782D7E.Up2Date
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\obj\Debug\net8.0\refint\ERP.Application.dll
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.xml
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\obj\Debug\net8.0\ERP.Application.pdb
+D:\malu\Leniinfo\AI Source\rar\ERP-main v3\Code\ERP.Application\obj\Debug\net8.0\ref\ERP.Application.dll

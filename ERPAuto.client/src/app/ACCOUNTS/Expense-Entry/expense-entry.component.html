@@ -1,0 +1,50 @@
+<!-- Main Card -->
+<div class="main-card">
+  <div class="header-bar">Expense Entry</div>
+
+  <div class="form-section">
+    <form #expenseEntryForm="ngForm" (ngSubmit)="onSubmit(expenseEntryForm)" class="row g-3">
+
+      <div class="col-md-3">
+        <label for="expenseType" class="form-label">Expense Entry Type</label>
+        <input type="text"id="expenseType"class="form-control"name="expenseType"placeholder="Enter Expense Entry Type"required ngModel />
+      </div>
+
+      <div class="col-md-3">
+        <label for="accountCode" class="form-label">Account Code</label>
+        <input type="text"id="accountCode"class="form-control"name="accountCode"placeholder="Enter Account Code"required ngModel />
+      </div>
+
+      <div class="col-md-3">
+        <label for="expenseDate" class="form-label">Expense Entry Date</label>
+        <input type="date"id="expenseDate"class="form-control"name="expenseDate"[(ngModel)]="expenseDate"readonly />
+      </div>
+
+      <div class="col-md-3">
+        <label for="expenseId" class="form-label">Expense Entry ID</label>
+        <input type="text"id="expenseId"class="form-control"name="expenseId"placeholder="Enter Expense Entry ID"required ngModel />
+      </div>
+
+      <div class="col-md-3">
+        <label for="paymentMethod" class="form-label">Payment Method</label>
+        <select id="paymentMethod"class="form-select reduced-input"name="paymentMethod"ngModel required>
+          <option value="" disabled selected>Select Method</option>
+          <option value="card">Credit / Debit Card</option>
+          <option value="cash">Cash</option>
+          <option value="bank">Bank Transfer</option>
+          <option value="cheque">Cheque</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="description" class="form-label">Description</label>
+        <textarea id="description"class="form-control"name="description"placeholder="Enter Description"rows="1"required ngModel></textarea>
+      </div>
+
+      <div class="col-12 text-center mt-4">
+        <button type="submit" class="btn btn-primary px-4" [disabled]="expenseEntryForm.invalid">Submit</button>
+      </div>
+
+    </form>
+  </div>
+</div>

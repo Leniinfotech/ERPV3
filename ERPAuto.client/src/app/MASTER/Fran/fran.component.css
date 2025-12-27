@@ -1,0 +1,75 @@
+.fran-container {
+  max-width: 1000px;
+  background: #f8faff;
+  border-top: 5px solid #007bff;
+}
+
+/* Title */
+h2 {
+  letter-spacing: 1px;
+}
+
+/* Form Labels */
+.form-label {
+  color: #333;
+}
+
+/* Input Styles */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  transition: all 0.2s ease;
+}
+
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+
+/* Buttons */
+button {
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+}
+
+/* Blue button - Like the image */
+.btn-primary,
+.btn-edit {
+  background-color: #1976d2; /* Flat medium blue */
+  border: none;
+  color: white;
+}
+
+  .btn-primary:hover,
+  .btn-edit:hover {
+    background-color: #0d47a1; /* Slightly darker blue on hover */
+  }
+
+/* Red button - Like the image */
+.btn-danger,
+.btn-delete {
+  background-color: #e53935; /* Flat red */
+  border: none;
+  color: white;
+}
+
+  .btn-danger:hover,
+  .btn-delete:hover {
+    background-color: #b71c1c; /* Darker red hover */
+  }
+
+/* Table */
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
+.table-hover tbody tr:hover {
+  background-color: #f2f6ff;
+}
+
+

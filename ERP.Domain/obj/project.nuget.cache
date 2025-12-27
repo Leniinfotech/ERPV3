@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OTiU9SIvMg4=",
+  "success": true,
+  "projectFilePath": "D:\\malu\\Leniinfo\\AI Source\\rar\\ERP-main v3\\Code\\ERP.Domain\\ERP.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vaishnavi\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\10.0.1\\microsoft.entityframeworkcore.tools.10.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
